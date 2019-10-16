@@ -5,20 +5,9 @@
     <classes>
       <class name="Elite_Search.Elite_Search.searchTest">
         <methods>
-          <include name="Brand_Sort"/>
-          <include name="Price_Sort"/>
-          <include name="ALLfiltercases"/>
-          <include name="sortfilter"/>
-          <include name="catagory"/>
-          <include name="Brand"/>
-          <include name="search"/>
-          <include name="Brand_Price"/>
           <include name="launch"/>
-          <include name="login"/>
-          <include name="Price_Brand"/>
-          <include name="Sort_Brand"/>
-          <include name="pricefilter"/>
-          <include name="Sort_Price"/>
+          <include name="Search_005"/>
+          <include name="Search_013"/>
         </methods>
       </class> <!-- Elite_Search.Elite_Search.searchTest -->
     </classes>
