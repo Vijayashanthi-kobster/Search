@@ -123,9 +123,6 @@ public class searchTest {
 		  searchmethod.High2low_result();
 		  searchmethod.totalcount_product();
 		  searchmethod.refresh();
-		
-		
-	  
 	  }
 	
 	
@@ -152,10 +149,10 @@ public class searchTest {
 	  
 		  searchmethod.price_filter();
 		  searchmethod.Brand_selection();
-		  searchmethod.sort_low2high();
+		  searchmethod.High2low_sort();
 		  searchmethod.pagescroll();
 		  
-		  searchmethod.low2high_result();
+		  searchmethod.High2low_result();
 		  searchmethod.price_filter_result(); 
 
 		  searchmethod.totalcount_product();
@@ -195,10 +192,10 @@ public class searchTest {
 		  
 		  
 		  searchmethod.price_filter(); 
-		  searchmethod.sort_low2high();
+		  searchmethod.High2low_sort();
 		  searchmethod.pagescroll();
 		  
-		  searchmethod.low2high_result();		  
+		  searchmethod.High2low_result();		  
 		  searchmethod.price_filter_result();
 		  searchmethod.totalcount_product();
           searchmethod.refresh();
@@ -238,10 +235,10 @@ public class searchTest {
 	  
 		  searchmethod.pagescroll();
 		  searchmethod.Brand_selection(); 
-		  searchmethod.sort_low2high();
+		  searchmethod.High2low_sort();
 		  searchmethod.pagescroll();
 
-		  searchmethod.low2high_result();		  
+		  searchmethod.High2low_result();		  
 		  searchmethod.brandresult(); 
 		  searchmethod.totalcount_product();
           searchmethod.refresh();
@@ -276,12 +273,12 @@ public class searchTest {
 		  System.out.println("Case-16: Verify the search result when user apply Sort filter and then Price filter");
 	  
 	  
-		  searchmethod.sort_low2high(); 
+		  searchmethod.High2low_sort();
 		  searchmethod.price_filter(); 
 		  searchmethod.pagescroll();
 
 		  searchmethod.price_filter_result();
-		  searchmethod.low2high_result();
+		  searchmethod.High2low_result();
 		  
 		  searchmethod.totalcount_product(); 
 		  

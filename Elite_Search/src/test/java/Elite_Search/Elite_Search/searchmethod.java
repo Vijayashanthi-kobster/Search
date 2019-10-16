@@ -54,7 +54,6 @@ public class searchmethod {
 	      {
 		   System.out.println("Case Failed-Login");
 	      }
-
 	 	}
 
 	public static void search_key(String keydata) throws InterruptedException {
@@ -343,7 +342,7 @@ public class searchmethod {
 	//Locators for finding the price value
 		String beforexpath="//*[@id=\"app\"]/div/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[";
 		String afterxpath ="]/div[4]/div[1]/div[2]";
-		Thread.sleep(2000);
+		Thread.sleep(4000);
 
 		List<WebElement> list = driver.findElements(By.className("sp-product-container"));
 	    int count = list.size();
@@ -373,8 +372,16 @@ public class searchmethod {
 			System.out.println(sortedPrices);
 				// true if the prices are sorted
 				System.out.println(sortedPrices.equals(priceList));
-		 
-		  System.out.println("Both sorted list equals  , Sorting filter case passsed successfully ");
+		 if(sortedPrices.equals(priceList)== true)
+		 {
+			  System.out.println("Both sorted list equals  , Sorting filter case passsed successfully ");
+			 
+		 }
+		 else {
+			 System.out.println("Case Failed");
+		 }
+				
+				
 
 	}
 
@@ -403,7 +410,7 @@ public class searchmethod {
 			    //Locators for finding the price value
 				String beforexpath="//*[@id=\"app\"]/div/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[";
 				String afterxpath ="]/div[4]/div[1]/div[2]";
-				Thread.sleep(2000);
+				Thread.sleep(4000);
 
 				//Total count of product present in sorting result
 				List<WebElement> list = driver.findElements(By.className("sp-product-container"));
@@ -435,9 +442,16 @@ public class searchmethod {
 					
 					 // true if the prices are sorted
 					System.out.println(sortedPrices_high2low.equals(low2high));
-			 
+			 if (sortedPrices_high2low.equals(low2high) == true) 
+			 {
+				 
 			  System.out.println("Both sorted list passed , Sorting filter case passsed successfully ");
-				
+			 }
+			 else 
+			 {
+				 System.out.println("case Failed");
+			 }
+			 
 	}
 
 	public static void refresh() throws InterruptedException

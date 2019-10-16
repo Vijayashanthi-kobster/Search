@@ -5,9 +5,24 @@
     <classes>
       <class name="Elite_Search.Elite_Search.searchTest">
         <methods>
+          <include name="Search_008"/>
+          <include name="Search_007"/>
+          <include name="Search_009"/>
           <include name="launch"/>
+          <include name="login"/>
+          <include name="Search_004"/>
+          <include name="Search_015"/>
+          <include name="Search_003"/>
+          <include name="Search_014"/>
+          <include name="Search_006"/>
           <include name="Search_005"/>
+          <include name="Search_016"/>
+          <include name="Search_011"/>
+          <include name="Search_010"/>
+          <include name="Search_002"/>
           <include name="Search_013"/>
+          <include name="Search_001"/>
+          <include name="Search_012"/>
         </methods>
       </class> <!-- Elite_Search.Elite_Search.searchTest -->
     </classes>
