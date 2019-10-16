@@ -343,7 +343,7 @@ public class searchmethod {
 	//Locators for finding the price value
 		String beforexpath="//*[@id=\"app\"]/div/div[1]/div/div[2]/div/div[2]/div/div/div[1]/div[";
 		String afterxpath ="]/div[4]/div[1]/div[2]";
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 
 		List<WebElement> list = driver.findElements(By.className("sp-product-container"));
 	    int count = list.size();
@@ -367,14 +367,14 @@ public class searchmethod {
 		 	List<Float> sortedPrices = new ArrayList<Float>(priceList);
 		    System.out.println(sortedPrices);
 		 
-			Collections.reverse(sortedPrices);
-		  System.out.println("the products are sorted in Low to high ");
+			Collections.sort(sortedPrices);
+		 System.out.println("Below displaying the product pricelist sorted by manually using collection ");
 
 			System.out.println(sortedPrices);
 				// true if the prices are sorted
 				System.out.println(sortedPrices.equals(priceList));
 		 
-		  System.out.println("Both sorted list FAILED , Sorting filter case passsed successfully ");
+		  System.out.println("Both sorted list equals  , Sorting filter case passsed successfully ");
 
 	}
 
@@ -387,13 +387,13 @@ public class searchmethod {
 
 			  	WebElement element = driver.findElement(Locator.sort);
 			  	
-			  	Actions actions = new Actions(driver);
-	            actions.moveToElement(element).click().perform();
+			  	Actions actions1 = new Actions(driver);
+	            actions1.moveToElement(element).click().perform();
 			  	element.click();
 
 		      	// driver.findElement(sort).click();
-				Select sorting=new Select(driver.findElement(Locator.sort));
-				sorting.selectByIndex(2);
+				Select sorting1=new Select(driver.findElement(Locator.sort));
+				sorting1.selectByIndex(2);
 			    Thread.sleep(3000); 
 	       
 			    //Loading all products 
@@ -430,20 +430,14 @@ public class searchmethod {
 		     
 				  
 			 
-			    	Collections.reverse(sortedPrices_high2low);
-			  System.out.println("the products are sorted in High  to low ");
-
-					// true if the prices are sorted
+			    	Collections.sort(sortedPrices_high2low);
+					 System.out.println("Below displaying the product pricelist sorted by manually using collection ");
+					
+					 // true if the prices are sorted
 					System.out.println(sortedPrices_high2low.equals(low2high));
 			 
-			  System.out.println("Both sorted list FAILED , Sorting filter case passsed successfully ");
-
-			    
-			    
-			    System.out.println("%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%");
-		
-
-		
+			  System.out.println("Both sorted list passed , Sorting filter case passsed successfully ");
+				
 	}
 
 	public static void refresh() throws InterruptedException

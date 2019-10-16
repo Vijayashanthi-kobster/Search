@@ -117,7 +117,7 @@ public class searchTest {
 	  public void Search_008() throws InterruptedException, AWTException 
 
 	  { 
-		  System.out.println("Case-8: Before region selection ,Verify the Low to High sort filter and count of product");
+		  System.out.println("Case-8: Before region selection ,Verify the High to Low sort filter and count of product");
 		  searchmethod.High2low_sort();
 		  searchmethod.pagescroll();
 		  searchmethod.High2low_result();
@@ -213,7 +213,7 @@ public class searchTest {
 		  
 		  System.out.println("Case-13: Verify the search result when user Brand filter and then Price filter");
 	  
-	  
+		  searchmethod.pagescroll();
 		  searchmethod.Brand_selection(); 
 		  searchmethod.price_filter();
 		  searchmethod.pagescroll();
@@ -236,7 +236,7 @@ public class searchTest {
 		  
 		  System.out.println("Case-14: Verify the search result when user apply Brand filter and then Sort filter");
 	  
-	  
+		  searchmethod.pagescroll();
 		  searchmethod.Brand_selection(); 
 		  searchmethod.sort_low2high();
 		  searchmethod.pagescroll();
